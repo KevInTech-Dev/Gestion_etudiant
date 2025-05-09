@@ -1,0 +1,100 @@
+<!DOCTYPphpml>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Gestion des Étudiants</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background:  #d0cccc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline; 
+            margin: 0 15px; 
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 19px;
+            background: rgb(89, 70, 133);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: rgb(226, 225, 228);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="infouniversité.php"><img src="image/logoU1.png" alt="Logo Université"></a>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="propos.php">À propos</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="part1">
+                <h1>Tableau de Bord - Gestion des Étudiants</h1>
+            </div>
+            <h2>Fonctionnalités</h2>
+            <ul>
+                <li>
+                    <a href="ajoutEtu.php" class="btn">Ajouter un Nouvel Étudiant</a>
+                </li>
+                <li>
+                    <a href="consultationEtu.php" class="btn">Consulter les Étudiants</a>
+                </li>
+                <li>
+                    <a href="consultationEtu.php" class="btn">Modifier ou Supprimer un Étudiant</a>
+                </li>
+            </ul>
+            <h2>Déconnexion</h2>
+            <a href="index.php" class="btn">Se Déconnecter</a>
+        </div>
+    </main>
+</body>
+</html>
